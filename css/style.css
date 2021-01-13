@@ -1,0 +1,421 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; */
+
+body,html,h6{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Playfair Display', serif;
+}
+
+.sptb{
+    padding: 70px 0;
+}
+.spt{
+    padding-top: 70px;
+}
+.spb{
+    padding-bottom: 70px;
+}
+
+/* section 01 */
+
+.section-tittle h6{
+    font-size: 16px;
+    color: #F93E45;
+}
+.section-tittle h3{
+    font-size: 35px;
+    color:#18253E;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.box{
+    height: 400px;
+}
+.box{
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+.box1{
+    background: url(../img/apartment6.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+.box11{
+    background: url(../img/apartment2.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+.box2{
+    background: url(../img/apartment5.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+.box3{
+    background: url(../img/apartment4.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+.box4{
+    background: url(../img/apartment3.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+.box::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, #18253e 1%, rgba(255, 255, 255, 0) 93%);
+    border-radius: 5px;}
+.box-text {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    
+    left: 15px;
+    transition: all .3s ease-in-out;
+}
+.box-text h4, .text h4{
+    font-size: 22px;
+    line-height: 26px;
+}
+.box-text span , .text span{
+    font-size: 16px;
+    line-height: 34px;
+    display: block;
+}
+
+ul ,li{
+    margin: 0;
+    padding: 0;
+}
+.box-text ul, .text ul {
+    list-style-type: none;
+}
+.text ul li{
+    border-left: 1px solid #353333;
+}
+.box-text ul li{
+    border-left: 1px solid #fafafa;
+}
+.box-text ul li, .text ul li {
+    display: inline-block;
+    padding: 0 10px;
+    
+    line-height: 1.2;
+    font-size: 14px;
+    line-height: 22px;
+}
+.box-text ul li:first-child, .text ul li:first-child  {
+    padding-left: 0;
+    border-left: 0px;
+}
+.box-text ul li:last-child  {
+    border-right: 1px solid #fafafa;
+}
+.text ul li:last-child{
+    border-right: 1px solid #2b2a2a;
+}
+.btn1{
+    background-color: #d1404a;
+    padding: 10px 20px;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    left: -15px;
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.btn1:hover{
+    background-color: #18253e;
+    color: white;
+}
+.box:hover .box-text{
+    transform: translateY(-60px);
+}
+.box:hover .btn1{
+    left: 15px;
+    visibility: visible;
+    opacity: 1;
+} 
+.owl-nav {
+    position: absolute;
+    right: 40px;
+    top: -55px;
+} 
+
+.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev{
+    margin: 0 8px;
+    outline: 0;
+}
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.owl-carousel .owl-nav button.owl-next span:hover, .owl-carousel .owl-nav button.owl-prev span:hover {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot span{
+    /* padding: 0px 14px; */
+    display: inline-block;
+}
+.owl-dots {
+    display: none;
+}
+
+/* section02 */
+.card-box, .card-box1{
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(31, 160, 189);
+    border-radius: 10px;
+    position: relative;
+    transition: .5s all ease-in-out;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+.card-box1{
+    margin: 0px;
+    border-radius: 0;
+    box-shadow: 5px 13px 25px -14px #e1e0e0;
+}
+.card-box1 span{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: darkblue;
+    display: block;
+    text-align: center;
+    margin: auto;
+    line-height: 100px;
+    box-shadow: 0 0 10px 1px red;
+    color: white;
+    transition: .5s all ease-in-out;
+    margin-top: 20px;
+}
+.card-box:hover{
+    z-index: 1;
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px 5px rgba(8, 132, 226, 0.753);
+}
+.card-box1:hover{
+    z-index: 1;
+    color: white;
+}
+.card-box::after{
+    height: 3px;
+}
+.card-box1::after{
+    height: 0px;
+}
+.card-box::after, .card-box1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    
+    background-color: rgb(2, 44, 214);
+    transition: .5s all ease-in-out
+}
+.card-box:hover:after{
+    height: 100%;
+    background-color: rgb(255, 0, 25);
+    z-index: -1;
+}
+.card-box1:hover::after{
+    height: 100%;
+    background-color: rgb(255, 0, 25);
+    z-index: -1;
+
+}
+.card-box i{
+    position: relative;
+    z-index: 1;
+    
+}
+.card-box i::after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -29px;
+    top: -25px;
+    background-color: #b4b4c7;
+    content: "";
+    border-radius: 50%;
+    z-index: -1;
+    
+}
+.card-box:hover i::after {
+    background-color: #ff9daa6d;
+}
+.card-box h3, .card-box1 h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.card-box p {
+    color: #2b2a2a;
+}
+.card-box:hover p {
+    color: #cecece;
+}
+/* card box 1 */
+.card-box1:hover.card-box1 span{
+    transform: rotateY(360deg);
+    color: red;
+}
+.card-box1 p{
+    position: relative;
+}
+.card-box1::before{
+    position: absolute;
+    content: "";
+    height: 80%;
+    right: 0px;
+    width: 2px;
+    background-color: rgb(138, 127, 127);
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.card-box1:hover::before{
+    z-index: -1;
+    
+}
+/* bos */
+.box-text1{
+    position: relative;
+    border-radius: 10px;
+    
+    
+}
+.bos{
+    transition: .5s all ease-in-out;
+    border-radius: 10px;
+    /* transform: translateY(0px); */
+}
+.bos:hover{
+    background-color: steelblue;
+    color: white;
+    transform: translateY(-10px);
+}
+.box-text1 img{
+    border-radius: 10px;
+}
+.box-text1 span{
+    position: absolute;
+    border-radius: 4px;
+    color: white;
+    padding: 7px 20px;
+}
+.box-text1 span:nth-child(2){
+    left: 15px;
+    top: 15px;
+    background-color: rgba(214, 18, 18, 0.692);
+    padding: 7px 20px;
+}
+.box-text1 span:nth-child(3){
+    right: 15px;
+    top: 15px;
+    background-color: #18253e;
+    
+}
+.text{
+    padding: 15px 15px;
+}
+a{
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+}
+.text a span{
+    display: inline-block;
+}
+.bos:hover .text a{
+    color: white;
+}
+.text a span i{
+    color: red;
+}
+.text h4 a:hover{
+    color: crimson!important;
+}
+.text a:hover{
+    color: crimson!important;
+}
+.text span{
+    color: rgb(255, 0, 0);
+}
+/* 05 section */
+.project{
+    border-radius: 8px;
+    transition: .5s all ease-in-out;
+}
+
+.project-text{
+    border-radius:0 10px 10px 10px;
+}
+.project-text{
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 23px 20px -6px #f1ecec;
+}
+.project-text h3 a{
+    color: #18253e;
+    font-size: 22px;
+    font-weight: bold;
+    transition: .3s all ease-in-out;
+}
+.project img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.project-text p{
+    margin: 0px;
+    color: #7e8594;
+    font-size: 16px;
+}
+.project:hover .project-text{
+    color: white;
+    background-color: #f93e45;
+}
+.project:hover .project-text h3 a{
+    color: white;
+}
+.project:hover .project-text p{
+    color: white;
+}
+.project-text h3 a:hover{
+    color: #18253e!important;
+}
+.odometer{
+    float: right;
+}
